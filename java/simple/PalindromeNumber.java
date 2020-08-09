@@ -24,9 +24,15 @@ public class PalindromeNumber {
         return result == o;
     }
 
+    public static boolean isPalindrome2(int x) {
+        String reversedStr = (new StringBuilder(x + "")).reverse().toString();
+        return (x + "").equals(reversedStr);
+    }
+
     public static void main(String[] args) {
         int x = 121;
         System.out.println(isPalindrome(x));
+        System.out.println(isPalindrome2(x));
     }
 
 }
